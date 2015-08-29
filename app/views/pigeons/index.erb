@@ -3,6 +3,32 @@
   <h1>Pigeons</h1>
   
   <!-- show a table that lists all pigeons here -->
+  <table colspan='25' width='100%'>
+    <thead>
+      <tr>
+        <th colspan='5' align='center' width='20%'>Name:     </th>
+        <th colspan='5' align='center' width='20%'>Color:    </th>
+        <th colspan='5' align='center' width='20%'>Gender:   </th>
+        <th colspan='5' align='center' width='20%'>Lives:    </th>
+        <th colspan='5' align='center' width='20%'>          </th>
+        <th colspan='5' align='center' width='20%'>          </th>
+      </tr>
+    </thead>
+    
+    <tbody>
+      <tr> 
+      <% @pigeon.each do |p| %>
+        <td colspan='5' align='center' width='20%'><%= p.name %></td>
+        <td colspan='5' align='center' width='20%'><%= p.color %></td>
+        <td colspan='5' align='center' width='20%'><%= p.gender %></td>
+        <td colspan='5' align='center' width='20%'><%= p.lives %></td> 
+        <td colspan='5' align='center' width='20%'><a class='button' href='/pigeons/show'>Show</a></td> 
+        <td colspan='5' align='center' width='20%'><a class='button' href='/pigeons/edit'>Edit</a></td> 
+      <% end %> 
+      </tr>
+    </tbody>
+  </table>
+
 
   <a class="button" href="/pigeons/new">New Pigeon</a>
   

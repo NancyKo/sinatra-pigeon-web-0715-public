@@ -4,6 +4,18 @@
 
 <!-- form goes here -->
 
+<form action="/pigeons" method='POST'>
+  <label for="name">Name:<br />
+  <input type="text" name="name" value="" >
+  <label for="color">Color:<br />
+  <input type="text" name="color" value="">
+  <label for="gender">Gender:<br />
+  <input type="text" name="gender" value="">
+  <label for="lives">Lives:<br />
+  <input type="text" name="lives" value="">
+  <input type="submit" value="Submit">
+</form>
+
 <a class="button" href="/pigeons">Cancel</a>
 
 <%= erb :'layouts/_footer' %>
